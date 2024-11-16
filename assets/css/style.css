@@ -29,7 +29,8 @@ h4,
 h5,
 h6,
 strong,
-.title {
+.title,
+.title a {
   font-family: "Sen", sans-serif;
   color: var(--secondary-color);
 }
@@ -287,4 +288,135 @@ a {
 }
 .hero-summary .item:nth-of-type(3) {
   margin-bottom: 0;
+}
+
+/* Courses */
+.courses {
+  padding: 64px 0;
+  margin: 136px 0;
+}
+
+.courses .popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.courses .popular-top .title {
+  color: #171100;
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1.26; /* 126.316% */
+  letter-spacing: -0.076rem;
+}
+
+.courses .popular-top .desc {
+  width: 480px;
+  max-width: 100%;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+  margin-top: 16px;
+}
+
+.courses .controls {
+  display: flex;
+}
+
+.courses .controls .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: solid 1px;
+  border-color: var(--primary-color);
+  border-radius: 50%;
+  background: #ffffff;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.courses .icon + .icon {
+  margin-left: 18px;
+}
+/* course list  */
+.course-list {
+  margin-top: 55px;
+  display: flex;
+  gap: 30px;
+}
+.course-list .course-item {
+  width: 370px;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course-item a img {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+}
+
+.course-item .info {
+  padding: 16px 22px 32px;
+}
+
+.course-item .info .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-item .info .title {
+  display: inline-block;
+  color: #171100;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.course-item .info .rating {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.course-item .info .desc {
+  color: #5f5b53;
+  font-family: Poppins;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+  margin-top: 6px;
+}
+
+.course-item .foot {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-item .foot .price {
+  color: #171100;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.course-item .foot .btn {
+  border-color: transparent;
+  font-size: 1.4rem;
+  line-height: 1.772;
+}
+.course-item .foot .btn:hover,
+.courses .controls .icon:hover {
+  background: var(--primary-color);
+  cursor: pointer;
+  color: #fff;
 }
