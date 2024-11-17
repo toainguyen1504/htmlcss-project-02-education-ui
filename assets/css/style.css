@@ -430,7 +430,6 @@ a {
 .feedback-list .feedback-item {
   display: flex;
   justify-items: center;
-
 }
 
 .feedback-list .info .avatar {
@@ -477,3 +476,66 @@ a {
   font-weight: 400;
   line-height: 1.54;
 }
+
+/* Features */
+.features {
+  padding: 64px 0;
+  margin: 136px 0;
+}
+
+.features .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  width: 570px;
+  height: 438px;
+  display: flex;
+  gap: 0 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.features .images img.lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.features .content .title {
+  color: #171100;
+  font-size: 3.8rem;
+  font-weight: 600;
+  line-height: 1.26;
+  letter-spacing: -0.076rem;
+}
+
+.features .content .desc {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-top: 16px;
+}
+
+.features .btn.cta-group {
+  margin-top: 32px;
+  background: var(--primary-color);
+  min-width: 137px;
+}
+
+/* Blog */
+
+/* Footer */
